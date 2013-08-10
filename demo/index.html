@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>jQuery Address Parser plugin demo</title>
+
+  <script type="text/javascript" src="../lib/jquery/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="../lib/bin/jquery-addressparser.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(function() {
+      $('#rawAddress').addressparser({
+        name: '#name',
+        address: '#address',
+        city: '#city',
+        province: '#province',
+        postal: '#postal',
+        country: '#country',
+        phone: '#phone',
+        email: '#email',
+        website: '#website'
+      });  
+    });
+  </script>
+
+  <style type='text/css'>
+    textarea { width: 400px; height: 200px; }
+    input { width: 200px; float: left; }
+    label { float: left; text-align: right; padding-right: 5px; width: 100px; padding-top: 3px; clear: left; }
+    hr { clear: both; margin: 20px 0; }
+  </style>
+</head>
+
+<body>
+<label for='rawAddress'>Raw address:</label>
+<textarea id='rawAddress'></textarea>
+<br /><br />
+<label for='name'>Name: </label>
+<input type='text' id='name' />
+
+<label for='address'>Address: </label>
+<input type='text' id='address' />
+
+<label for='city'>City: </label>
+<input type='text' id='city' />
+
+<label for='province'>Province/State: </label>
+<input type='text' id='province' />
+
+<label for='postal'>Zip/Postal: </label>
+<input type='text' id='postal' />
+
+<label for='country'>Country: </label>
+<input type='text' id='country' />
+
+<label for='phone'>Phone: </label>
+<input type='text' id='phone' />
+
+<label for='email'>Email: </label>
+<input type='text' id='email' />
+
+<label for='website'>Website: </label>
+<input type='text' id='website' />
+
+<hr />
+
+<p>Sample test addresses:</p>
+
+<p>
+Secco Italian Bubbles<br />
+19 East Birch Street, Ste 106<br />
+Walla Walla, Washington 99362<br />
+Phone: 509.526.5230 <br />
+seccoitalianbubbles@gmail.com <br />
+
+http://www.seccobubbles.com/<br />
+</p>              
+
+<p>
+Amsterdam Brewery<br />
+info@amsterdambeer.com<br />
+416.504.6882<br />
+http://amsterdambeer.com<br />
+45 Esandar Dr Toronto, ON M4G 4C5<br />
+</p>
+
+
+</body>
+</html>
